@@ -40,9 +40,10 @@
         <!-- Set Up Editor -->
         <article>
             <p>Editor</p>
-            <form>
-                <textarea class="form-control" id="editor" rows="10" placeholder="Enter Code or Text"></textarea>
-            </form>
+                <textarea class="form-control" id="editor" rows="10" placeholder="Enter Code or Text" oninput="displayPreview()"></textarea>
+                
+                <!-- Set Up Previewer -->
+                <article id="preview"></article>
 
         </article>
     </section>
