@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Markdown Previewer</title>
+    <!-- Load Style Sheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        /* Heading H1 */
+
+        h1 {
+            font-family: "Roboto", Arial, Verdana, sans-serif;
+            text-align: center;
+        }
+
+        /* Editor */
+
+        p {
+            font-family: "Roboto", Arial, Verdana, sans-serif;
+        }
+
+        #editor {
+            font-family: "Consolas", monospace;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Set Up Heading -->
+    <header class="container-fluid">
+        <h1>Markdown Previewer</h1>
+    </header>
+
+    <!-- Set Up Section -->
+    <section class="container-fluid">
+        <!-- Set Up Editor -->
+        <article>
+            <p>Editor</p>
+            <form>
+                <textarea class="form-control" id="editor" rows="10" placeholder="Enter Code or Text"></textarea>
+            </form>
+
+        </article>
+    </section>
+</body>
+
+</html>
