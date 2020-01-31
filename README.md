@@ -26,13 +26,15 @@ on Font Awesome 4.7.0</p>
 <ul>
 <li>Anna Richardson</li>
 <li>Kate Garraway</li>
+<li>Ruth Langsford</li>
 <li>Susanna Reid</li>
 </ul>
-<blockquote cite="https://www.bcs.org">To promote and
+<blockquote cite="https://www.bcs.org">The purpose of the BCS is to promote and
 advance the education and practice of computing
 for the benefit of the public.
 </blockquote>
-
+<img src="ely-cathedral.JPG" alt="Ely Cathedral" />
+<b>Here is some bold text</b>
 </textarea>
 ```
 
@@ -59,11 +61,11 @@ in the #editor field should be rendered as HTML in the #preview element.
 
 ## Features
 
-
+This project has an editor and a previewer.
 
 ## Technologies
 
-The Marked Library - example below taken from https://marked.js.org/#/README.md#installation.  Accessed on
+This project uses the Marked Library - example below taken from https://marked.js.org/#/README.md#installation.  Accessed on
 29 January 2020.
 
 ```
@@ -89,4 +91,6 @@ This project uses jQuery 3.4.1 at
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
 </script>
 ```
+
+This project also uses HTML5, CSS3, Google Fonts and Bootstrap 4.4.1.
 
