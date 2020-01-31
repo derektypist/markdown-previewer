@@ -37,6 +37,10 @@
                 `<p>{marked('# Your project title')}</p>
                 <p>{marked('## UX')}`);
         }
+        
+        
+        // Load Function
+        $(document).reday(displayPreview);
     </script>
 </head>
 
@@ -51,8 +55,15 @@
         <!-- Set Up Editor -->
         <article>
             <p>Editor</p>
-                <textarea class="form-control" id="editor" rows="10" placeholder="Enter Code or Text (e.g. # Your Project Title)" oninput="displayPreview()"></textarea>
-                
+                <textarea class="form-control" id="editor" rows="10" oninput="displayPreview()">
+                    <h1>Header</h1>
+                    <h2>Sub Header</h2>
+                    <a href="https://www.bcs.org" target="_blank" title="British Computer Society">British Computer Society (BCS)</a>
+                    <code>Here's </code>
+                    
+                    
+                    </textarea>
+                    
                 <!-- Set Up Previewer -->
                 <article id="preview"></article>
 

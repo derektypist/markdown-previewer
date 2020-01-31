@@ -5,7 +5,32 @@ https://codepen.io/freeCodeCamp/full/GrZVVO.
 
 ## UX
 
+When the page first loads, the default text in the #editor field should be displayed.
 
+An example of how to set default text in the textarea element is shown below.
+
+```
+<textarea>
+<h1>My Project Title</h1>
+<p>Welcome to my project title</p>
+<h2>UX</h2>
+<a href="https://www.bcs.org" target="_blank" title="British Computer Society">
+British Computer Society</a>
+<p>Access the music icon <code><i class="fa fa-music" aria-hidden="true"></i></code>
+on Font Awesome 4.7.0</p>
+<code>/* This is a multi-line comment in JavaScript
+      Define a function that adds 2
+      */
+}
+</code>
+<ul>
+<li>Anna Richardson</li>
+<li>Kate Garraway</li>
+<li>Susanna Reid</li>
+</ul>
+<blockquote>Thank you for your kind words</blockquote>
+</textarea>
+```
 
 ### User Stories
 
@@ -18,7 +43,7 @@ When I enter text into the #editor element, the #preview element is updated as I
 When I enter GitHub flavoured markdown into the #editor element, the text is rendered as HTML in the #preview element.
 Import the Marked Library at https://cdnjs.com/libraries/marked
 
-When my markdown previewer first loads, the the default text in the #editor field should contain valid 
+When my markdown previewer first loads, the default text in the #editor field should contain valid 
 markdown that represents at least one of each of the 
 following elements: a header (H1 size), a sub header (H2 size), a link, inline code, 
 a code block, a list item, a blockquote, an image, and bolded text.
@@ -37,6 +62,7 @@ in the #editor field should be rendered as HTML in the #preview element.
 The Marked Library - example below taken from https://marked.js.org/#/README.md#installation.  Accessed on
 29 January 2020.
 
+```
 <!doctype html>
 <html>
 <head>
@@ -52,3 +78,11 @@ The Marked Library - example below taken from https://marked.js.org/#/README.md#
   </script>
 </body>
 </html>
+```
+
+This project uses jQuery 3.4.1 at 
+```
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+</script>
+```
+
