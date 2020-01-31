@@ -16,7 +16,7 @@ An example of how to set default text in the textarea element is shown below.
 <h2>UX</h2>
 <a href="https://www.bcs.org" target="_blank" title="British Computer Society">
 British Computer Society</a>
-<p>Access the music icon <code><i class="fa fa-music" aria-hidden="true"></i></code>
+<p>Access the music icon <code>&lt;i class="fa fa-music" aria-hidden="true"&gt;&lt;/i&gt;</code>
 on Font Awesome 4.7.0</p>
 <code>/* This is a multi-line comment in JavaScript
       Define a function that adds 2
@@ -28,7 +28,11 @@ on Font Awesome 4.7.0</p>
 <li>Kate Garraway</li>
 <li>Susanna Reid</li>
 </ul>
-<blockquote>Thank you for your kind words</blockquote>
+<blockquote cite="https://www.bcs.org">To promote and
+advance the education and practice of computing
+for the benefit of the public.
+</blockquote>
+
 </textarea>
 ```
 

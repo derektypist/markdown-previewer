@@ -33,14 +33,24 @@
     <script>
         // Define Function
         function displayPreview() {
+            // Define Variable
+            let userinput = $("#editor").val();
+            
+            // If the textarea is blank, display message
+            if (userinput.length == 0 ) {
+                $("#preview").html(`<h2>Please enter some text</h2>`);
+                return;
+            }
+            
+            // Display Previewed Text
             $("#preview").html(
-                `<p>{marked('# Your project title')}</p>
-                <p>{marked('## UX')}`);
+                `<header>marked('${userinput}')</header>`);
+            
         }
         
         
         // Load Function
-        $(document).reday(displayPreview);
+        $(document).ready(displayPreview);
     </script>
 </head>
 
@@ -55,13 +65,26 @@
         <!-- Set Up Editor -->
         <article>
             <p>Editor</p>
-                <textarea class="form-control" id="editor" rows="10" oninput="displayPreview()">
+                <!-- Set Up textarea with Default Value -->
+                <textarea class="form-control" id="editor" value="project" rows="10" oninput="displayPreview()">
                     <h1>Header</h1>
                     <h2>Sub Header</h2>
                     <a href="https://www.bcs.org" target="_blank" title="British Computer Society">British Computer Society (BCS)</a>
-                    <code>Here's </code>
-                    
-                    
+                    <p>Here's some code<code>&lt;i class=&quot;fa fa-music&quot; aria-hidden=&quot;true&quot;&gt;</code> for setting up the music icon
+                    in Font Awesome 4.7.0.</p>
+                    <p>Writing an internal style sheet</p>
+                    <code>&lt;style&gt;
+                    p {
+                        &tab;font-family: &quot;Roboto&quot;, Arial, Verdana, sans-serif&semi;
+                        &tab:color: green&semi;
+                        }</code>
+                    <p>Favourite Celebrities</p>
+                    <ul>
+                        <li>Anna Richardson</li>
+                        <li>Kate Garraway</li>
+                        <li>Ruth Langsford</li>
+                        <li>Susanna Reid</li>
+                    </ul>
                     </textarea>
                     
                 <!-- Set Up Previewer -->
