@@ -61,10 +61,17 @@
                 return;
             }
             
-            // OverRide 
-
+            // Override functions
+            renderer.heading = function(userinput, level) {
+                const escapedText = userinput.toLowerCase().replace(/[^\w]+/g, '-');
+                
+                 return `
+                    <h${level}>
+                    <a name `
+                    
+            };
             // Display Previewed Text
-            $("#preview").html(`<header>marked('${userinput}', { renderer: renderer })</header>`);
+            
 
         }
 
@@ -96,7 +103,7 @@ Welcome to my project.  The purpose of this project...
 Here's some code `&lt;i class="fa fa-music" aria-hidden="true"&gt;&lt;/i&gt;`.  To get the music icon using Font Awesome 4.7.0.
 
             
- 
+![Google Logo](http://www.google.com/images/errors/logo_sm.gif) 
             
 </textarea>
 
