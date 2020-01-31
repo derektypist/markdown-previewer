@@ -40,18 +40,31 @@
     <script>
         // Define Function
         function displayPreview() {
+            
+            
+            
+            // Create reference instance
+            const marked = require('marked');
+            
+            // Get reference
+            const renderer = new marked.Renderer();
+            
+            
+
             // Define Variable
             let userinput = $("#editor").val();
+
 
             // If the textarea is blank, display message
             if (userinput.length == 0) {
                 $("#preview").html(`<h2>Please enter some text</h2>`);
                 return;
             }
+            
+            // OverRide 
 
             // Display Previewed Text
-            $("#preview").html(
-                `<header>marked('${userinput}')</header>`);
+            $("#preview").html(`<header>marked('${userinput}', { renderer: renderer })</header>`);
 
         }
 
@@ -73,34 +86,19 @@
         <article>
             <p>Editor</p>
             <!-- Set Up textarea with Default Value -->
-            <textarea class="form-control" id="editor" value="project" rows="10" oninput="displayPreview()">
-                    <h1>Header</h1>
-                    <h2>Sub Header</h2>
-                    <a href="https://www.bcs.org" target="_blank" title="British Computer Society">British Computer Society (BCS)</a>
-                    <p>Here's some code<code>&lt;i class=&quot;fa fa-music&quot; aria-hidden=&quot;true&quot;&gt;</code> for setting up the music icon
-                    in Font Awesome 4.7.0.</p>
-                    <p>Writing an internal style sheet for a paragraph (p) with Font Roboto and
-                    color of green.</p>
-                    <code>&lt;style&gt;
-                    p {
-                        &tab;font-family: &quot;Roboto&quot;, Arial, Verdana, sans-serif&semi;
-                        &tab;:color: green&semi;
-                        }
-                    &lt;style&gt;</code>
-                    <p>Favourite Celebrities</p>
-                    <ul>
-                        <li>Anna Richardson</li>
-                        <li>Kate Garraway</li>
-                        <li>Ruth Langsford</li>
-                        <li>Susanna Reid</li>
-                    </ul>
-                    <blockquote cite="https://www.bcs.org">
-                        The purpose of the British Computer Society (BCS) is to promote and
-                        advance the education and practice of computing for the benefit of the public.
-                    </blockquote>
-                    <img src="ely-cathedral.JPG" alt="Ely Cathedral"/>
-                    <b>Here is some bold text</b>
-                    </textarea>
+            <textarea class="form-control" id="editor" value="project" rows="10" oninput="displayPreview()"># Header
+
+Welcome to my project.  The purpose of this project...
+
+## Sub Header
+
+[British Computer Society](https://www.bcs.org)
+Here's some code `&lt;i class="fa fa-music" aria-hidden="true"&gt;&lt;/i&gt;`.  To get the music icon using Font Awesome 4.7.0.
+
+            
+ 
+            
+</textarea>
 
             <!-- Set Up Previewer -->
             <p>Preview</p>

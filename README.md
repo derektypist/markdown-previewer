@@ -59,6 +59,14 @@ in the #editor field should be rendered as HTML in the #preview element.
 
 [Wireframes](wireframes/wireframe-markdown-previewer) are provided in the wireframes folder.
 
+
+
+![Google Logo](http://www.google.com/images/errors/logo_sm.gif)
+
+
+
+Example of Google Logo.
+
 ## Features
 
 This project has an editor and a previewer.
@@ -94,3 +102,8 @@ This project uses jQuery 3.4.1 at
 
 This project also uses HTML5, CSS3, Google Fonts and Bootstrap 4.4.1.
 
+## Credits
+
+### Acknowledgements
+
+At https://marked.js.org/#/USING_PRO.md#renderer
