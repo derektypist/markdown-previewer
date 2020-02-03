@@ -59,7 +59,7 @@ in the #editor field should be rendered as HTML in the #preview element.
 
 [Wireframes](wireframes/wireframe-markdown-previewer) are provided in the wireframes folder.
 
-
+Make text in **bold** using two asterisks.
 
 ![Google Logo](http://www.google.com/images/errors/logo_sm.gif)
 
@@ -106,7 +106,6 @@ This project also uses HTML5, CSS3, Google Fonts and Bootstrap 4.4.1.
 
 ### Acknowledgements
 
-> This
-> Is
+
 
 At https://marked.js.org/#/USING_PRO.md#renderer
