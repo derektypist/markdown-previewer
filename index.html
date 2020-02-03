@@ -37,64 +37,22 @@
     </style>
     <!-- Load Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script>
-        // Define Function
-        function displayPreview() {
-            
-            
-            
-            // Create reference instance
-            const marked = require('marked');
-            
-            // Get reference
-            const renderer = new marked.Renderer();
-            
-            
-
-            // Define Variable
-            let userinput = $("#editor").val();
-
-
-            // If the textarea is blank, display message
-            if (userinput.length == 0) {
-                $("#preview").html(`<h2>Please enter some text</h2>`);
-                return;
-            }
-            
-            // Override functions
-            renderer.heading = function(userinput, level) {
-                const escapedText = userinput.toLowerCase().replace(/[^\w]+/g, '-');
-                
-                 return `
-                    <h${level}>
-                    <a name `
-                    
-            };
-            // Display Previewed Text
-            
-
-        }
-
-
-        // Load Function
-        $(document).ready(displayPreview);
-    </script>
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+   
 </head>
 
 <body>
-    <!-- Set Up Heading -->
-    <header class="container-fluid">
-        <h1>Markdown Previewer</h1>
-    </header>
-
+   
     <!-- Set Up Section -->
-    <section class="container-fluid">
+    <article class="container-fluid" id="my-markdown"></article>
         <!-- Set Up Editor -->
-        <article>
+        <script type="text/babel"></script>
+        <article className="container-fluid">
             <p>Editor</p>
             <!-- Set Up textarea with Default Value -->
-            <textarea class="form-control" id="editor" rows="10" oninput="displayPreview()"># Header
+            <textarea className="form-control" id="editor" rows="10" oninput="displayPreview()"># Header
 
 Welcome to my project.  The purpose of this project...
 
@@ -141,7 +99,7 @@ for the benefit of the public
             <article id="preview"></article>
 
         </article>
-    </section>
+</script>    
 </body>
 
 </html>
