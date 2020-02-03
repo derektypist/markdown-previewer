@@ -40,71 +40,45 @@
     <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
     <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
-   
+
 </head>
 
 <body>
-   
+
     <!-- Set Up Section -->
     <article class="container-fluid" id="my-markdown"></article>
-        <!-- Set Up Editor -->
-        <script type="text/babel">
-        class MyMarkdownPreviewer extends React.Component {
-            constructor(props) {
-                
-            }
-        }
-        <article className="container-fluid">
-            <p>Editor</p>
-            <!-- Set Up textarea with Default Value -->
-            <textarea className="form-control" id="editor" rows="10" oninput="displayPreview()"># Header
+    <!-- Set Up Editor -->
+    <script type="text/babel">
+        class MyMarkdownPreviewer extends React.Component { 
+            constructor(props) { 
+                super(props); 
+                const myH1 = "# Welcome to my project.\n\n"; 
+                const myPurpose = "The purpose of this project...\n\n";
+                const myH2 = "## Sub Header\n\n"; 
+                const myLink = "[British Computer Society](https://www.bcs.org)\n"; 
+                const myInlineCode = "Here is some code `<i class&quot;fa fa-music&quot; aria-hidden=&quot;true&quot;></i>`.\nTo get the music icon using Font Awesome 4.7.0.\n";
+                const myMultiCode = "``` &lt;style&gt; p {font-family: &quot;Roboto&quot;, Arial, Verdana, sans-serif&semi;color: green&semi;}&lt;/style&gt;```\n\n";
+                const myCelebs = "Favourite Celebrities\n\n"; 
+                const myListItems = "* Anna Richardson\n* Kate Garraway\n* Ruth Langsford\n* Susanna Reid\n\n";
+                const myLinkedListItems = "List Items can contain links:\n\n[The National League](https://www.thenationalleague.org.uk)\n* [Cambridge Python User Group](https://www.meetup.com/CamPUG)\n"; const myBold = "You can make text **bold** using two asterisks\n";
+                const myBlockQuotes = "There are blockquotes > The purpose the BCS is to promote and advance the education and practice of computing for the benefit of the public.\n"; const myImageLink = "![Google Logo](http://www.google.com/images/errors/logo_sm.gif)";
+                this.state = { userInput: myH1 + myPurpose + myH2 + myLink + myInlineCode + myMultiCode + myCelebs + myListItems + myLinkedListItems + myBold + myBlockQuotes + myImageLink};
+                this.handleChange = this.handleChange.bind(this); } 
+            handleChange(event) {
+             this.setState({userInput: event.target.value}); 
+            } 
+            render() { let mypreview = marked(this.state.userInput); return (
+        <div>
 
-Welcome to my project.  The purpose of this project...
+            <textarea className="form-control" id="editor" onChange={this.handleChange}>{this.state.userInput}</textarea>
+        </div>
 
-## Sub Header
+        <article id="preview">{mypreview}</article>
+        ); } } ReactDOM.render(
+        <MyMarkDownPreviewer/>, document.getElementById("my-markdown"));
 
-[British Computer Society](https://www.bcs.org)
-Here's some code `&lt;i class="fa fa-music" aria-hidden="true"&gt;&lt;/i&gt;`.  To get the music icon using Font Awesome 4.7.0.
 
-Multi-line code
-```
-&lt;style&gt;
-p {
-    font-family: &quot;Roboto&quot;, Arial, Verdana, sans-serif&semi;
-    color: green&semi;
-}
-&lt;/style&gt;
-```
-
-List Items - Favourite Celebrities
-* Anna Richardson
-* Kate Garraway
-* Ruth Langsford
-* Susanna Reid
-
-List Items can contain links
-* [The National League](https://www.thenationalleague.org.uk)
-* [Cambridge Python User Group](https://www.meetup.com/CamPUG)
-* [Anna Richardson](https://www.annarichardson.co.uk)
-
-You can make text in **bold** using two asterisks.
-
-There are blockquotes
-
-> The purpose of the BCS is to promote and
-advance the education and practice of computing
-for the benefit of the public
-
-![Google Logo](http://www.google.com/images/errors/logo_sm.gif) 
-            
-</textarea>
-
-            <!-- Set Up Previewer -->
-            <p>Preview</p>
-            <article id="preview"></article>
-
-        </article>
-</script>    
+    </script>
 </body>
 
 </html>
