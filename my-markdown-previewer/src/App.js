@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 let marked = require('marked');
 
 // Set Up Component
 
 class App extends Component {
-  state = {
+  constructor(props) {
+    super(props);
+    this.state = {
     markdown: `# Welcome to my project.
     The purpose of this project...
     ## Sub Header
@@ -41,7 +42,39 @@ class App extends Component {
     
     `
   }
+  }
+  
+  
+  // Update markdown on change of form
+  updateMarkdown = function(markdown) {
+    this.setState({markdown});
+  };
+  
+  render() {
+    let {markdown} = this.state;
+  
+  return (
+    <div classname="App container">
+    <div>
+    <label>Markdown Input</label>
+    <texarea id="editor" value={markdown} onChange={(event)=> this.updateMarkdown(event.target.value)}/>
+    </div>
+    <div>
+    <h1>Markdown Output</h1>
+    {/*Converts string version of html into actual html  */}
+    <div id="preview" dangerouslySetInnerHTML= {{__html:marked(markdown)}}>
+    </div>
+    </div>
+    </div>
+    
+    
+    );
+  
+    
+  
+    
+  
 }
-
+}
 
 export default App;
