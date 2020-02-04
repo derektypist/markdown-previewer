@@ -94,18 +94,13 @@ This project uses the Marked Library - example below taken from https://marked.j
 </html>
 ```
 
-This project uses jQuery 3.4.1 at 
-```
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
-</script>
-```
-
-This project also uses HTML5, CSS3, Google Fonts and Bootstrap 4.4.1.
+This project also uses HTML5, CSS3, Google Fonts, React, Marked and Bootstrap 4.4.1.
 
 ## Credits
 
 ### Acknowledgements
 
+Visited the GitHub page of [Dylan Israel](https://github.com/PizzaPokerGuy) for guidance of Markdown
+Previewer.
 
-
-At https://marked.js.org/#/USING_PRO.md#renderer
+Visited the W3Schools.com page for ideas on React.
