@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './App.css';
 let marked = require('marked');
 
 // Set Up Component
@@ -57,7 +56,7 @@ class App extends Component {
     <div classname="App container">
     <div>
     <label>Markdown Input</label>
-    <texarea id="editor" value={markdown} onChange={(event)=> this.updateMarkdown(event.target.value)}/>
+    <texarea id="editor" rows="10" className="form-control" value={markdown} onChange={(event)=> this.updateMarkdown(event.target.value)}/>
     </div>
     <div>
     <h1>Markdown Output</h1>

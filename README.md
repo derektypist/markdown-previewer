@@ -47,7 +47,7 @@ I can see an element with corresponding id="preview".
 When I enter text into the #editor element, the #preview element is updated as I type to display the content of the textarea.
 
 When I enter GitHub flavoured markdown into the #editor element, the text is rendered as HTML in the #preview element.
-Import the Marked Library at https://cdnjs.com/libraries/marked
+Import the Marked Library at https://cdnjs.com/libraries/marked or use the command npm install marked (in-browser) or command-line npm install -g marked
 
 When my markdown previewer first loads, the default text in the #editor field should contain valid 
 markdown that represents at least one of each of the 
