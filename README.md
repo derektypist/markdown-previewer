@@ -74,7 +74,6 @@ Make text in **bold** using two asterisks.
 ![Google Logo](http://www.google.com/images/errors/logo_sm.gif)
 
 
-
 Example of Google Logo.
 
 ## Features
@@ -108,7 +107,7 @@ This project also uses HTML5, CSS3, Google Fonts, React, Marked and Bootstrap 4.
 
 ## Testing
 
-Ensure all user stories have been met.
+Ensure all user stories have been met.  If some or all have failed, go back and edit the code until all user stories have been met.
 
 ## Deployment
 
@@ -123,13 +122,15 @@ To create a production bundle, still in the directory of my-markdown-previewer, 
 
 In manifest.json add "homepage": "https://derektypist.github.io/markdown-previewer".
 
-
+Use the git push command to see any changes.
 
 ## Credits
 
-### Acknowledgements
+### Content
 
-> This is great
+Written by me.
+
+### Acknowledgements
 
 Visited the GitHub page of [Dylan Israel](https://github.com/PizzaPokerGuy) for guidance of Markdown
 Previewer.
