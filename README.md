@@ -5,38 +5,10 @@ https://codepen.io/freeCodeCamp/full/GrZVVO.
 
 ## UX
 
-When the page first loads, the default text in the #editor field should be displayed.
+When the page first loads, the default text in the #editor field should be displayed.  It should include 
 
-An example of how to set default text in the textarea element is shown below.
 
-```
-<textarea>
-<h1>My Project Title</h1>
-<p>Welcome to my project title</p>
-<h2>UX</h2>
-<a href="https://www.bcs.org" target="_blank" title="British Computer Society">
-British Computer Society</a>
-<p>Access the music icon <code>&lt;i class="fa fa-music" aria-hidden="true"&gt;&lt;/i&gt;</code>
-on Font Awesome 4.7.0</p>
-<code>/* This is a multi-line comment in JavaScript
-      Define a function that adds 2
-      */
-}
-</code>
-<ul>
-<li>Anna Richardson</li>
-<li>Kate Garraway</li>
-<li>Ruth Langsford</li>
-<li>Susanna Reid</li>
-</ul>
-<blockquote cite="https://www.bcs.org">The purpose of the BCS is to promote and
-advance the education and practice of computing
-for the benefit of the public.
-</blockquote>
-<img src="ely-cathedral.JPG" alt="Ely Cathedral" />
-<b>Here is some bold text</b>
-</textarea>
-```
+
 
 ### User Stories
 
@@ -47,7 +19,7 @@ I can see an element with corresponding id="preview".
 When I enter text into the #editor element, the #preview element is updated as I type to display the content of the textarea.
 
 When I enter GitHub flavoured markdown into the #editor element, the text is rendered as HTML in the #preview element.
-Import the Marked Library at https://cdnjs.com/libraries/marked or use the command npm install marked (in-browser) or command-line npm install -g marked
+Import the Marked Library at https://cdnjs.com/libraries/marked or use the command npm install marked (in-browser) or command-line npm install -g marked (CLI).
 
 When my markdown previewer first loads, the default text in the #editor field should contain valid 
 markdown that represents at least one of each of the 
@@ -58,6 +30,44 @@ When my markdown previewer first loads, the default markdown
 in the #editor field should be rendered as HTML in the #preview element.
 
 [Wireframes](wireframes/wireframe-markdown-previewer) are provided in the wireframes folder.
+
+Examples of default text that can be used.
+
+# My header
+
+## My subheader
+
+List Items
+
+* Word Processing
+* Databases
+* Spreadsheets
+
+Use the command `git status` to check that any changes have been added to commit.
+
+Link
+
+[National League in England](https://www.thenationalleague.org.uk)
+
+Examples of multi-line code - paragraph (p) set to Font Roboto and color of green.
+
+```
+<style>
+p {
+  font-family: "Roboto", Arial, Verdana, sans-serif;
+  color: green;
+}
+</style>
+```
+
+List Items can include links.
+
+* [British Computer Society](https://www.bcs.org)
+* [Cambridge Python User Group](https://www.meetup.com/CamPUG)
+
+Blockquotes
+
+> "Thank you for your kind words" - Daphne Pink
 
 Make text in **bold** using two asterisks.
 
@@ -96,9 +106,30 @@ This project uses the Marked Library - example below taken from https://marked.j
 
 This project also uses HTML5, CSS3, Google Fonts, React, Marked and Bootstrap 4.4.1.
 
+## Testing
+
+Ensure all user stories have been met.
+
+## Deployment
+
+This project is deployed on [GitHub Pages](https://derektypist.github.io/markdown-previewer) using the master branch.
+
+Remote Setup at git remote add origin https://github.com/derektypist/markdown-previewer
+
+Go to the directory (my-markdown-previewer) by entering the command `cd my-markdown-previewer` and type `npm start` to
+begin the development.
+
+To create a production bundle, still in the directory of my-markdown-previewer, use the command `npm run build`
+
+In manifest.json add "homepage": "https://derektypist.github.io/markdown-previewer".
+
+
+
 ## Credits
 
 ### Acknowledgements
+
+> This is great
 
 Visited the GitHub page of [Dylan Israel](https://github.com/PizzaPokerGuy) for guidance of Markdown
 Previewer.
