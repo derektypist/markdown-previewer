@@ -1,7 +1,6 @@
 {
   "short_name": "React App",
   "name": "Create React App Sample",
-  "homepage": "https://derektypist.github.io/markdown-previewer",
   "icons": [
     {
       "src": "favicon.ico",
@@ -10,7 +9,7 @@
     },
     
   ],
-  "start_url": "./index.html",
+  "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"

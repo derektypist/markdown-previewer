@@ -40,7 +40,7 @@ class App extends Component {
     * Spreadsheets - include **Charts and Formula**
     
     `
-  }
+  };
   }
   
   

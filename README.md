@@ -5,10 +5,8 @@ https://codepen.io/freeCodeCamp/full/GrZVVO.
 
 ## UX
 
-When the page first loads, the default text in the #editor field should be displayed.  It should include 
-
-
-
+When the page first loads, the default text in the #editor field should be displayed.  It should include the
+elements in the user stories.
 
 ### User Stories
 
