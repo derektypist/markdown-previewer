@@ -7,7 +7,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-    markdown: `# Welcome to my project.
+      markdown: `# Welcome to my project.
     The purpose of this project...
     ## Sub Header
     [British Computer Society](https://www.bcs.org)
@@ -40,23 +40,25 @@ class App extends Component {
     * Spreadsheets - include **Charts and Formula**
     
     `
-  };
+    };
+    
+    this.updateMarkdown = this.updateMarkdown.bind(this);
   }
-  
+
   
   // Update markdown on change of form
-  updateMarkdown = function(markdown) {
-    this.setState({markdown});
-  };
-  
+  updateMarkdown(event) {
+    this.setState({markdown: event.target.value});
+  }
+
   render() {
-    let {markdown} = this.state;
-  
-  return (
-    <div className="App container">
+    let { markdown } = this.state;
+
+    return (
+      <div className="App container">
     <div>
     <label>Markdown Input</label>
-    <texarea id="editor" rows="10" className="form-control" value={markdown} onChange={(event)=> this.updateMarkdown(event.target.value)}/>
+    <texarea id="editor" rows="10" className="form-control" value={markdown} onChange={this.updateMarkdown}/>
     </div>
     <div>
     <h1>Markdown Output</h1>
@@ -65,15 +67,15 @@ class App extends Component {
     </div>
     </div>
     </div>
-    
-    
+
+
     );
-  
-    
-  
-    
-  
-}
+
+
+
+
+
+  }
 }
 
 export default App;
