@@ -118,9 +118,11 @@ begin the development.
 
 To create a production bundle, still in the directory of my-markdown-previewer, use the command `npm run build`
 
-In manifest.json add "homepage": "https://derektypist.github.io/markdown-previewer".
+In package.json add "homepage": "https://derektypist.github.io/markdown-previewer".
 
 Use the git push command to see any changes.
+
+Still in my-markdown-previewer directory go to npm run deploy.
 
 ## Credits
 
