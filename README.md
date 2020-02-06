@@ -27,7 +27,7 @@ a code block, a list item, a blockquote, an image, and bolded text.
 When my markdown previewer first loads, the default markdown 
 in the #editor field should be rendered as HTML in the #preview element.
 
-[Wireframes](wireframes/wireframe-markdown-previewer) are provided in the wireframes folder.
+[Wireframes](wireframes/wireframe-markdown-previewer.PNG) are provided in the wireframes folder.
 
 Examples of default text that can be used.
 
@@ -122,7 +122,7 @@ In package.json add "homepage": "https://derektypist.github.io/markdown-previewe
 
 Use the git push command to see any changes.
 
-Still in my-markdown-previewer directory go to npm run deploy.
+Still in my-markdown-previewer directory go to npm run deploy.  When asked, enter username and password.
 
 ## Credits
 
