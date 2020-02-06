@@ -53,7 +53,7 @@ class App extends Component {
     let {markdown} = this.state;
   
   return (
-    <div classname="App container">
+    <div className="App container">
     <div>
     <label>Markdown Input</label>
     <texarea id="editor" rows="10" className="form-control" value={markdown} onChange={(event)=> this.updateMarkdown(event.target.value)}/>
