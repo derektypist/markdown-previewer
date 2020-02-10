@@ -55,7 +55,7 @@ class App extends Component {
     let { markdown } = this.state;
 
     return (
-      <div className="App container">
+      <div className="App container-fluid">
     <div>
     <label>Markdown Input</label>
     <texarea id="editor" rows="10" className="form-control" value={markdown} onChange={this.updateMarkdown}/>
