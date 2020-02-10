@@ -12,8 +12,11 @@ class App extends Component {
     ## Sub Header
     [British Computer Society](https://www.bcs.org)
     Here is some code - to check status on GitHub use the command \`git status\`.  You can also reset.
-    Writing an Internal Style Sheet
-    \`\`\` &lt;style&gt; p {font-family: &quot;Roboto&quot;, Arial, Verdana, sans-serif&semi;color: green&semi;}&lt;/style&gt;\`\`\`
+    Writing Code in Python
+    \`\`\` x = 4
+    y = 2
+    z = x + y
+    print(z)\`\`\`
     
     Favourite Celebrities
     * Anna Richardson
