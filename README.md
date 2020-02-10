@@ -6,7 +6,7 @@ https://codepen.io/freeCodeCamp/full/GrZVVO.
 ## UX
 
 When the page first loads, the default text in the #editor field should be displayed. 
-It should include the elements in the user stories.
+It should include the elements (e.g. list items) in the user stories.
 
 ### User Stories
 
@@ -48,24 +48,6 @@ Link
 [National League in England](https://www.thenationalleague.org.uk)
 
 
-Examples of default text that can be used.
-
-# My header
-
-## My subheader
-
-List Items
-
-* Word Processing
-* Databases
-* Spreadsheets
-
-Use the command `git status` to check that any changes have been added to commit.
-
-Link
-
-[National League in England](https://www.thenationalleague.org.uk)
-
 Examples of multi-line code - paragraph (p) set to Font Roboto and color of green.
 
 ```
@@ -85,69 +67,6 @@ Examples of multi-line code - paragraph (p) set to Font Roboto and color of gree
 * [Cambridge Python User Group](https://www.meetup.com/CamPUG)
 
 
-List Items can include links.
-
-* [British Computer Society](https://www.bcs.org)
-* [Cambridge Python User Group](https://www.meetup.com/CamPUG)
-
-Blockquotes
-
-> "Thank you for your kind words" - Daphne Pink
-
-Make text in **bold** using two asterisks.
-
-![Google Logo](http://www.google.com/images/errors/logo_sm.gif)
-
-
-Example of Google Logo.
-
-## Features
-
-This project has an editor and a previewer.
-
-
-> "Thank you for your kind words" - Daphne Pink
-
-Make text in **bold** using two asterisks.
-
-![Google Logo](http://www.google.com/images/errors/logo_sm.gif)
-
-
-Example of Google Logo.
-
-## Features
-
-This project has an editor and a previewer.
-
-## Technologies
-
-This project uses the Marked Library - example below taken from https://marked.js.org/#/README.md#installation.  Accessed on
-29 January 2020.
-
-```
-<!doctype html>
-<html>
-<head>
-  <meta charset="utf-8"/>
-  <title>Marked in the browser</title>
-</head>
-<body>
-  <div id="content"></div>
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-  <script>
-    document.getElementById('content').innerHTML =
-      marked('# Marked in the browser\n\nRendered by **marked**.');
-  </script>
-</body>
-</html>
-
-```
-
-List Items can include links.
-
-* [British Computer Society](https://www.bcs.org)
-* [Cambridge Python User Group](https://www.meetup.com/CamPUG)
-
 Blockquotes
 
 > "Thank you for your kind words" - Daphne Pink
@@ -184,9 +103,8 @@ This project uses the Marked Library - example below taken from https://marked.j
   </script>
 </body>
 </html>
-```
 
-This project also uses HTML5, CSS3, Google Fonts, React, Marked and Bootstrap 4.4.1.
+```
 
 ## Testing
 
