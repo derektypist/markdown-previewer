@@ -11,7 +11,7 @@ class App extends Component {
     The purpose of this project...
     ## Sub Header
     [British Computer Society](https://www.bcs.org)
-    Here is some code \`<i class&quot;fa fa-music&quot; aria-hidden=&quot;true&quot;></i>\`.To get the music icon using Font Awesome 4.7.0.
+    Here is some code - to check status on GitHub use the command \`git status\`.  You can also reset.
     Writing an Internal Style Sheet
     \`\`\` &lt;style&gt; p {font-family: &quot;Roboto&quot;, Arial, Verdana, sans-serif&semi;color: green&semi;}&lt;/style&gt;\`\`\`
     
