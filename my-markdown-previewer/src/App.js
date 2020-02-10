@@ -61,7 +61,7 @@ class App extends Component {
       <div className="App container-fluid">
     <div>
     <label>Markdown Input</label>
-    <texarea id="editor" rows="10" className="form-control" value={markdown} onChange={this.updateMarkdown}/>
+    <textarea id="editor" rows="10" className="form-control" value={markdown} onChange={this.updateMarkdown}/>
     </div>
     <div>
     <h1>Markdown Output</h1>
