@@ -7,42 +7,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      markdown: `# Welcome to my project.
-    The purpose of this project...
-    ## Sub Header
-    [British Computer Society](https://www.bcs.org)
-    Here is some code - to check status on GitHub use the command \`git status\`.  You can also reset.
-    Writing Code in Python
-    \`\`\` x = 4
-    y = 2
-    z = x + y
-    print(z)\`\`\`
-    
-    Favourite Celebrities
-    * Anna Richardson
-    * Kate Garraway
-    * Ruth Langsford
-    * Susanna Reid
-    
-    You can make text **bold** using two asterisks
-    
-    
-    List Items can contain links
-    * [The National League](https://www.thenationalleague.org.uk)
-    * [Cambridge Python User Group](https://www.meetup.com/CamPUG)
-    
-    There are blockquotes > The purpose the BCS is to promote and advance the education and practice of computing for the benefit of the public.
-    
-    Image Links
-    
-    ![Google Logo](http://www.google.com/images/errors/logo_sm.gif)
-    
-    ## Computing
-    
-    * Word Processing - include **Clipart Images, Headders and Footers**
-    * Spreadsheets - include **Charts and Formula**
-    
-    `
+      markdown: '# Welcome to my project.  \n The project...  \n## Sub Header \n[British Computer Society](https://www.bcs.org)  \nHere is some code.  To check status on GitHub use the command `git status`.  You can do other things in GitHub such as reset. \n  \nWriting Code in Python  \n```\nx = 4\ny = 2\nz = x + y\nprint(z)\n```  \nFavourite Celebrities  \n* Anna Richardson\n* Kate Garraway\n* Ruth Langsford\n* Susanna Reid\n\nYou can make text **bold** using two asterisks.  \nList Items can contain links  \n* [The National League](https://www.thenationalleague.org.uk)\n* [Cambridge Python User Group](https://www.meetup.com/CamPUG)\n\nThere are blockquotes\n> Thank you for your kind words\n\nImage Links  \n ![Google Logo](http://www.google.com/images/errors/logo_sm.gif)  \n## Computing  \n* Word Processing - include **Clipart Images, Headers and Footers** \n* Spreadsheets - include **Charts and Formula** \n* Presentations - include **Slide Layouts**'
     };
     
     this.updateMarkdown = this.updateMarkdown.bind(this);
