@@ -25,8 +25,9 @@ class App extends Component {
     return (
       <div className="App container-fluid">
     <div>
+    <h1 className="text-center">Markdown Previewer</h1>
     <label>Markdown Input</label>
-    <textarea id="editor" rows="10" className="form-control" value={markdown} onChange={this.updateMarkdown}/>
+    <textarea id="editor" rows="15" className="form-control" value={markdown} onChange={this.updateMarkdown}/>
     </div>
     <div>
     <h1>Markdown Output</h1>
